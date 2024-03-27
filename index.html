@@ -1,1 +1,177 @@
-hello world
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- css -->
+    <!-- <link rel="stylesheet/less" type="text/css" href="styles/styles.less" /> -->
+    <link rel="stylesheet" href="styles/styles.css" />
+
+    <script src="https://kit.fontawesome.com/df9e984536.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/less" ></script> -->
+  <title>Emily's Portfolio</title>
+  </head>
+<body>
+<div style="display: flex; flex-direction: row;">
+  <div class="nav">
+    <div class="nav-bar" role="tablist">
+      <button class="nav-item active-btn" id="btn-intro"><i class="fa-solid fa-house"></i></button>
+      <button class="nav-item" id="btn-skills">Skills</button>
+      <button class="nav-item" id="btn-pro">Professional Experience</button>
+      <button class="nav-item" id="btn-demo">Work Demo/Project</button>
+      <button class="nav-item" id="btn-edu">Education</button>
+      <!-- <button class="nav-item" id="btn-volunteer">Volunteering</button> -->
+      <button class="nav-item" id="btn-contact">Contact Me</button>
+    </div>
+  </div>
+  <div id="main" class="maincontent">
+    <section id="sec-intro" class="section intro">
+      <h1>Emily Chan</h1>
+      <h3>A software developer based in Toronto, ON</h3>
+      <div class="social-link">
+        <a href="https://www.linkedin.com/in/emily-chan-8547761b0"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.github.com/kychancq"><i class="fa-brands fa-github"></i></a>
+        <a onmouseenter="console.log('show tooltip')" class="tooltip"><i class="fa-regular fa-envelope"></i><p class="tooltiptext">kayichan2000@gmail.com</p></a>
+      </div>
+    </section>
+    <section id="sec-skills" class="section skills">
+      <div class="card-container">
+      <div class="card">
+        <h4>Programming Languages</h4>
+        <ul>
+          <li>JavaScript</li>
+          <li>TypeScript</li>
+          <li>CSS</li>
+          <li>HTML</li>
+          <li>C#</li>
+          <li>SQL</li>
+          <li>VBA</li>
+          <li>Java</li>
+          <li>C++</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4>Frameworks/Libraries</h4>
+        <ul>
+          <li>React (Native)</li>
+          <li>Vue</li>
+          <li>Redux</li>
+          <li>ASP.NET</li>
+          <li>Ant Design</li>
+          <li>Material UI</li>
+          <li>Bootstrap</li>
+          <li>jQuery</li>
+          <li>font awesome</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4>Backend Technologies and Tools</h4>
+        <ul>
+          <li>Microsoft SQL Server (RDBMS)</li>
+          <li>Internet Information Services(IIS)</li>
+          <li>REST API</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4>Package Managers</h4>
+        <ul>
+          <li>Node Package Manager (npm)</li>
+          <li>Yarn</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4>Version Control/Project Management</h4>
+        <ul>
+          <li>Git</li>
+          <li>GitHub</li>
+          <li>Gitlab</li>
+          <li>Jira</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4>IDE</h4>
+        <p>Visual Studio (Code)</p>
+      </div>
+      <div class="card">
+        <h4>Soft skills</h4>
+        <ul>
+          <li>Problem-solving</li>
+          <li>Team work</li>
+          <li>Effective communication</li>
+          <li>Adaptability</li>
+          <li>Time management</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4>Languages</h4>
+        <ul>
+          <li>English</li>
+          <li>Cantonese</li>
+          <li>Mandarin</li>
+        </ul>
+      </div>
+      </div>
+    </section>
+    <section id="sec-pro" class="section exp">
+      <h2>Professional Experience</h2>
+      <div class="timeline">
+        <div class="checkpoint">
+          <div>
+          <h3>Software Developer, Technical Product Manager</h3>
+          <h4>Folotech INC, North York, ON</h4>
+          </div>
+        </div>
+        <div class="checkpoint">
+          <div>
+          <h3>Programmer</h3>
+          <h4>HKT, Hong Kong</h4>
+          </div>
+        </div>
+        <div class="checkpoint">
+          <div>
+          <h3>Summer Intern</h3>
+          <h4>Hong Kong Central Library</h4>
+          </div>
+        </div>
+        <div class="checkpoint">
+          <div>
+          <h3>Student Helper</h3>
+          <h4>Hong Kong University of Science and Technology</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="sec-demo" class="section demo">
+      <p>This is demo sec</p>
+      
+    </section>
+    <section id="sec-edu" class="section edu">
+      <p>
+        Graduated from Hong Kong University of Science and Technology in 2022 (QS 34)<br/>
+        Major in Computer Engineering (QS by subject 29)<br/>
+        Final Year Project: A Campus Running/Walking App with GPS/IoT Rracking (React Native, JavaScript) Grade: A+<br/>
+        Course Project: Peg Solitaire (React Native, JavaScript) Grade: A, A Color Picking Game (Scratch) Grade: A+<br/>
+      </p>
+    </section>
+    <!-- <section id="sec-volunteer" class="section vltr">
+      <p>This is Volunteering sec</p>
+      <p>
+        discussion:<br/>
+        1. What's the difference of text-overflow, overflow, word-wrap?<br/>
+        2. Pros and Cons between pre and p tag. (pre tag cannot wrap word, they will overflow)<br/>
+        3. When to use br or start a new p<br/>
+        4. difference between React, Vue and HTML web.<br/>
+      </p>
+    </section> -->
+    <section id="sec-contact" class="section contact">
+      <p>This is contact sec</p>
+      <i>This web is built by <i class="fa-brands fa-html5"></i>, <i class="fa-brands fa-css3-alt"></i> ,<i class="fa-brands fa-font-awesome"></i></i>
+    </section>
+  </div>
+</div>
+</body>
+</html>

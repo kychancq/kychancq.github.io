@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --primary-color: #222;
+  --light-grey: #f7f7c2;
+  --button-color: #eae3c7;
+  --bg-color: #f6f6f6;
+  --default-font: "Poppins", sans-serif;
+
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+  font-family: var(--default-font);
+  font-size: 1rem;
+  transition: all .3s ease-in-out;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+button {
+  font-family: var(--default-font);
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+i {
+  font-size: 1.2rem;
+}
+
+img {
+  width: 100%;
+}
+
+.nav-bar {
+  width: 15%;
+  position: fixed;
+  z-index: 10;
+  top: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-50%);
+}
+
+.nav-item {
+  margin: 0.5rem 0;
+  box-shadow: none;
+  border: 0;
+  border-radius: 1.25rem;
+  background-color: transparent;
+  min-height: 2.5rem;
+  min-width: 2.5rem;
+}
+
+.nav-item:hover {
+  background-color: var(--button-color);
+  opacity: 0.8;
+}
+
+.active-btn {
+  background-color: var(--button-color);
+  transition: all 0.4s ease-in-out;
+}
+
+.maincontent {
+  width: 100%;
+  margin: 0;
+}
+
+.section {
+  display: block;
+  overflow: hidden;
+  width: 80vw;
+  word-wrap: break-word;
+  min-height: 100vh;
+  padding-left: 20vw;
+  flex-direction: column;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-image: url('../img/toronto.jpg');
+  background-size: cover;
+  image-rendering: optimizeSpeed;
+}
+
+.intro .social-link {
+  position: absolute;
+  bottom: 5vh;
+  left: 50vw;
+  padding: 2rem 1rem;
+}
+
+.intro .social-link i {
+  font-size: 2.5rem;
+  margin: 0 0.5rem;
+  color: var(--primary-color);
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  position: absolute;
+  top: -10vh;
+  display: none;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  display: block;
+}
+
+.skills {
+  display: none;
+  flex-direction: column;
+  margin-top: 5vh;
+}
+
+.card-container {
+  display: grid;
+  width: 78vw;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1vw;
+}
+
+.card {
+  padding: 2rem 1rem;
+  border-radius: 1rem;
+  width: 15vw;
+  height: fit-content;
+  background-color: var(--button-color);
+}
+
+.exp {
+  display: none;
+}
+
+.timeline {
+  max-width: 70vw;
+  margin: 0 auto;
+}
+
+.checkpoint {
+  max-width: 30rem;
+  position: relative;
+  padding: 1rem;
+}
+
+.checkpoint div {
+  border: 2px solid var(--primary-color);
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+
+.checkpoint:nth-child(odd) {
+  border-left: 3px solid var(--primary-color);
+  padding-left: 2rem;
+  transform: translateX(16.5rem);
+}
+
+.checkpoint:nth-child(even) {
+  border-right: 3px solid var(--primary-color);
+  padding-right: 2rem;
+  transform: translateX(-16.5rem);
+}
+
+.edu {
+  display: none;
+}
+
+.demo {
+  display: none;
+}
+
+.vltr {
+  display: none;
+}
+
+.contact {
+  display: none;
+}
+
