@@ -5,6 +5,7 @@
   --primary-color: #222;
   --light-grey: #f7f7c2;
   --button-color: #eae3c7;
+  --secondary-color: #00224D;
   --bg-color: #f6f6f6;
   --default-font: "Poppins", sans-serif;
 
@@ -33,6 +34,7 @@ h2 {
 
 button {
   font-family: var(--default-font);
+  font-size: 1rem;
 }
 
 a {
@@ -48,8 +50,12 @@ img {
   width: 100%;
 }
 
+.spacing-1 {
+  margin: 0 1rem;
+}
+
 .nav-bar {
-  width: 15%;
+  width: 15vw;
   position: fixed;
   z-index: 10;
   top: 50vh;
@@ -68,6 +74,12 @@ img {
   background-color: transparent;
   min-height: 2.5rem;
   min-width: 2.5rem;
+  text-align: center;
+}
+
+.nav-item i {
+  font-size: 1.5rem;
+  padding: 1rem;
 }
 
 .nav-item:hover {
@@ -88,10 +100,10 @@ img {
 .section {
   display: block;
   overflow: hidden;
-  width: 80vw;
+  width: 85vw;
   word-wrap: break-word;
   min-height: 100vh;
-  padding-left: 20vw;
+  padding-left: 15vw;
   flex-direction: column;
 }
 
@@ -104,17 +116,25 @@ img {
   image-rendering: optimizeSpeed;
 }
 
-.intro .social-link {
+.social-link {
+  width: 100%;
   position: absolute;
   bottom: 5vh;
   left: 50vw;
   padding: 2rem 1rem;
 }
 
-.intro .social-link i {
+.social-link i {
   font-size: 2.5rem;
-  margin: 0 0.5rem;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 2.5rem;
   color: var(--primary-color);
+  margin: 0 0.5rem;
+}
+
+.social-link a:hover i {
+  border: 2px solid var(--primary-color);
 }
 
 .tooltip {
@@ -192,6 +212,16 @@ img {
 
 .edu {
   display: none;
+}
+
+.level {
+  border-left: 2px solid var(--secondary-color);
+  padding-left: 1.5rem;
+  margin: 1rem 0;
+}
+
+.desc span{
+  font-weight: 600;
 }
 
 .demo {
