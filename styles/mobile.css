@@ -1,0 +1,44 @@
+@media screen and (max-width: 1024px) {
+  .pc {
+    display: none;
+  }
+
+  .nav-bar {
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: var(--secondary-color);
+  }
+
+  .container {
+    width: 100vw;
+    padding-bottom: 15vh;
+  }
+
+  .intro {
+    text-align: center;
+  }
+
+  .card-container {
+    grid-template-columns: repeat(auto-fill, 45vw);
+  }
+
+  .timeline {
+    max-width: 90%;
+  }
+
+  .checkpoint {
+    max-width: 90vw;
+  }
+
+  .sample {
+    width: 80vw;
+    padding: 3vh 5vw;
+  }
+
+}

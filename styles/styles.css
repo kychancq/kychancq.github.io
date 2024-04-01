@@ -1,20 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('./mobile.css');
+@import url('./pc.css');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
 
-:root {
   --primary-color: #163020;
-  --light-grey: #f7f7c2;
   --secondary-color: #EEF0E5;
+  --tertiary-color: #304D30;
   --dark-blue: #00224D;
   --bg-color: #B6C4B6;
   --default-font: "Poppins", sans-serif;
+}
 
+:root {
   font-size: 16px;
 }
 
@@ -28,13 +29,17 @@ body {
 
 h1 {
   font-size: 5rem;
-  margin: 2rem 0;
+  padding: 2rem 0;
 }
 
 h2 {
   font-size: 3rem;
-  text-align: center;
   margin: 1.5rem 0;
+  text-align: center;
+}
+
+h4 {
+  color: var(--tertiary-color);
 }
 
 button {
@@ -55,6 +60,10 @@ ul {
   margin: 0 1rem;
 }
 
+li {
+  margin: 0.5rem 0;
+}
+
 img {
   width: 100%;
 }
@@ -69,16 +78,9 @@ img {
   align-items: center;
 }
 
-.nav-bar {
-  width: 15vw;
-  position: fixed;
-  z-index: 10;
-  top: 50vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  transform: translateY(-50%);
+.main-container {
+  width: 100vw;
+  min-height: 100vh;
 }
 
 .nav-item {
@@ -99,44 +101,43 @@ img {
 
 .nav-item:hover {
   background-color: var(--secondary-color);
-  opacity: 0.8;
+  color: var(--primary-color);
+  opacity: 0.75;
 }
 
 .active-btn {
-  background-color: var(--secondary-color);
-  transition: all 0.4s ease-in-out;
+  background-color: var(--tertiary-color);
+  color: var(--secondary-color);
+  transition: all 0.05s ease-in-out;
 }
 
-.maincontent {
-  width: 100%;
-  margin: 0;
+.nav-item:hover i {
+  font-size: 1.75rem;
+  transition: all 0.05s ease-in-out;
 }
 
 .section {
-  display: block;
+  display: block;  
   overflow: hidden;
   width: 100vw;
   word-wrap: break-word;
   min-height: 100vh;
-  padding-left: 15vw;
-  flex-direction: column;
 }
 
-.intro {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
+.intro-bg {
   background-image: url('../img/toronto.jpg');
   background-size: cover;
   image-rendering: optimizeSpeed;
 }
 
+.intro {
+  display: flex;
+}
+
 .social-link {
-  width: 100%;
-  position: absolute;
-  bottom: 5vh;
-  left: 50vw;
-  padding: 2rem 1rem;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
 }
 
 .social-link i {
@@ -174,20 +175,18 @@ img {
 
 .skills {
   display: none;
-  flex-direction: column;
 }
 
 .card-container {
   display: grid;
-  width: 78vw;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1vw;
+  gap: 5vh 3vw;
+  padding: 0 2vw;
+  justify-content: center;
 }
 
 .card {
   padding: 2rem 1rem;
   border-radius: 1rem;
-  width: 15vw;
   height: fit-content;
   background-color: var(--secondary-color);
 }
@@ -197,32 +196,20 @@ img {
 }
 
 .timeline {
-  max-width: 70vw;
+  overflow: hidden;
   margin: 0 auto;
 }
 
 .checkpoint {
-  max-width: 500px;
   position: relative;
   padding: 1rem;
+  margin: 0 auto;
 }
 
 .checkpoint div {
   background-color: var(--secondary-color);
   border-radius: 1rem;
   padding: 1.5rem;
-}
-
-.checkpoint:nth-child(odd) {
-  border-left: 3px solid var(--primary-color);
-  padding-left: 2rem;
-  transform: translateX(248.5px);
-}
-
-.checkpoint:nth-child(even) {
-  border-right: 3px solid var(--primary-color);
-  padding-right: 2rem;
-  transform: translateX(-248.5px);
 }
 
 .edu {
@@ -232,7 +219,12 @@ img {
 .level {
   border-left: 2px solid var(--dark-blue);
   padding-left: 1.5rem;
-  margin: 1rem 0;
+  margin: 1rem 5vw;
+  word-wrap: break-word;
+}
+
+.desc {
+  margin: 1vh 0;
 }
 
 .desc span{
@@ -252,10 +244,8 @@ img {
 .sample {
   background-color: var(--secondary-color);
   border-radius: 1rem;
-  width: 60vw;
   min-height: 30vh;
   margin: 2rem 0;
-  padding: 3vh 2vw;
 }
 
 .sample p {
@@ -267,7 +257,4 @@ img {
   display: none;
 }
 
-.contact {
-  display: none;
-}
 

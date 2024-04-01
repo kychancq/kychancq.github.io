@@ -7,38 +7,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!-- css -->
-    <!-- <link rel="stylesheet/less" type="text/css" href="styles/styles.less" /> -->
     <link rel="stylesheet" href="styles/styles.css" />
 
     <script src="https://kit.fontawesome.com/df9e984536.js" crossorigin="anonymous"></script>
     <script src="app.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/less" ></script> -->
   <title>Emily's Portfolio</title>
   </head>
 <body>
-<div style="display: flex; flex-direction: row;">
+<div class="main-container">
   <div class="nav">
-    <div class="nav-bar" role="tablist">
+    <div class="nav-bar">
       <button class="nav-item active-btn" id="btn-intro"><i class="fa-solid fa-house"></i></button>
       <button class="nav-item" id="btn-skills"><i class="fa-solid fa-gears"></i></button>
-      <button class="nav-item" id="btn-pro"><i class="fa-solid fa-laptop-code"></i></button>
+      <button class="nav-item" id="btn-pro"><i class="fa-regular fa-file-lines"></i></button>
       <button class="nav-item" id="btn-demo"><i class="fa-solid fa-folder"></i></button>
       <button class="nav-item" id="btn-edu"><i class="fa-solid fa-user-graduate"></i></button>
-      <!-- <button class="nav-item" id="btn-volunteer">Volunteering</button> -->
-      <!-- <button class="nav-item" id="btn-contact">Contact Me</button> -->
     </div>
   </div>
-  <div id="main" class="maincontent">
-    <section id="sec-intro" class="section intro">
-      <h1>Emily Chan</h1>
-      <h3>A software developer based in Toronto, ON</h3>
+  <section id='sec-intro' class="section intro-bg intro">
+    <div class="container" style="display:flex;flex-direction: column;justify-content: space-between;">
+      <div>
+        <h1>Emily Chan</h1>
+        <h3 style="margin: 0 2vw">A software developer based in Toronto, ON</h3>
+      </div>
       <div class="social-link">
         <a href="https://www.linkedin.com/in/emily-chan-8547761b0"><i class="fa-brands fa-linkedin"></i></a>
         <a href="https://www.github.com/kychancq"><i class="fa-brands fa-github"></i></a>
         <a onmouseenter="console.log('show tooltip')" class="tooltip"><i class="fa-regular fa-envelope"></i><p class="tooltiptext">kayichan2000@gmail.com</p></a>
       </div>
-    </section>
-    <section id="sec-skills" class="section skills">
+    </div>
+  </section>
+  <section id="sec-skills" class="section skills">
+    <div class="container">
       <h2>Skills</h2>
       <div class="card-container">
       <div class="card">
@@ -56,7 +56,7 @@
         </ul>
       </div>
       <div class="card">
-        <h4>Frameworks/Libraries</h4>
+        <h4>Frameworks/ Libraries</h4>
         <ul>
           <li>React (Native)</li>
           <li>Vue</li>
@@ -119,184 +119,191 @@
         </ul>
       </div>
       </div>
-    </section>
-    <section id="sec-pro" class="section exp">
-      <h2>Professional Experience</h2>
-      <div class="timeline">
-        <div class="checkpoint">
-          <div>
-          <h3>Software Developer, Technical Product Manager</h3>
-          <h4>Folotech INC, North York, ON</h4>
-          <p>
-            <ul>
-              <li>Developed and maintained a responsive website using Vue and Ant Design Vue</li>
-              <li>Utilized React and React Native framework with TypeScript/JavaScript and Material UI library to develop robust and efficient web and mobile applications.</li>
-              <li>Performed integration testing to ensure that the application functions as expected</li>
-              <li>Debugged, tested and troubleshoot software issues</li>
-              <li>Participated in UX/UI design and relational database scheme design</li>
-              <li>Skilled in implementing version control practices to manage code changes effectively and facilitate collaboration among development teams.</li>
-              <li>Defined product requirements and specifications based on non-functional requirements and business objectives.</li>
-              <li>Collaborated with cross-functional teams to prioritize and develop product features aligned with technical requirements and business goals</li>
-              <li>Conducted market and competitive analysis to identify future opportunities for growth for the products</li>
-            </ul>	
-            </p>
-          </div>
-        </div>
-        <div class="checkpoint">
-          <div>
-          <h3>Programmer</h3>
-          <h4>HKT, Hong Kong</h4>
-          <p>
-            <ul>
-              <li>Utilized ASP.NET web form with C# to develop CRM web applications.</li>
-              <li>Updated and maintained relational database system using MS SQL server to ensure the accuracy and efficiency in data management</li>
-              <li>Discussed with the sales team to collect opinions on improving the existing systems and made enhancements.</li>
-              <li>Worked closely with the test team to do UAT testing</li>
-              <li>Configured and deployed web applications on IIS web servers</li>
-            </ul>
-          </p>
-          </div>
-        </div>
-        <div class="checkpoint">
-          <div>
-          <h3>Summer Intern</h3>
-          <h4>Hong Kong Central Library</h4>
-          <p>
-            <ul>
-              <li>Digitized Carl Smith's Index Card and updated details by entering and revising data using Excel</li>
-              <li>Ensured accuracy, sequencing, and completeness by verifying images against original index cards.</li>
-              <li>Developed a VBA calendar program to generate weekly summary reports and streamline administrative processes.</li>
-              <li>Provided user manual and technical assistance to guide users in utilizing the program effectively</li>
-              <li>Applied strong computer literacy skills to enhance daily office operations</li>
-            </ul>
-          </p>
-          </div>
-        </div>
-        <div class="checkpoint">
-          <div>
-          <h3>Student Helper</h3>
-          <h4>Hong Kong University of Science and Technology</h4>
-          <p>
-            <ul>
-              <li>Assisted teaching assistants in guiding and monitoring students during lab sessions.</li>
-              <li>Helped students to achieve the desired results and provided troubleshooting assistance when needed.</li>
-              <li>Facilitated the distribution of lab materials and equipment, ensuring students had access to necessary resources.</li>
-            </ul>
-          </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="sec-demo" class="section demo">
-      <h2>Work Demo/Project</h2>
-      <div class="projects">
-        <div class="sample">
-          <h3>English Mobile Learning App</h3>
-          <p>The app is developed using React Native and TypeScript.</p>
-
-          <p>This app serves as a comprehensive platform for educational institutions, facilitating the streamlined distribution of homework assignments and the monitoring of students' academic progress. Teachers can leverage the app to send reminders, assess exercises, and design a variety of tasks to evaluate students' performance.</p>
-            
-          <p>Specifically, my responsibilities encompass implementing features designed for audio playback, including integrating animated effects such as a dynamic timeline and synchronized scrolling of audio content (lyrics). Additionally, I have successfully developed a task distribution feature empowering teachers to generate, assign, and disseminate tasks efficiently to students</p>
-        </div>
-        <div class="sample">
-          <h3>ESL Online Learning Platform</h3>
-          <p>The project is a web app that aims to provide online learning for ESL students who need flexible learning time and want to improve their English after school.</p>
-
-          <p>The app was completed using React, JavaScript, and Material UI.</p>  
-            
-          <p>My focus included the development of distinct platforms. Firstly, a student-centric web application had been crafted, empowering students to seamlessly register for courses, access educational materials, and engage in interactive sessions with teachers and teaching assistants.
-            Additionally, a dedicated web application tailored for teaching assistants has been designed. This platform facilitates posting comments, evaluating student performance, and the dynamic management of learning materials through features allowing publication and updates.</p>
-        </div>
-        <div class="sample">
-          <h3>Company Website Maintaince & Content Update Tools</h3>
-          <p>This project was utilized Vue and Ant Design</p>
-        </div>
-        <div class="sample">
-          <h3>CRM application renewal project</h3>
-          <p>This project was utilized ASP.NET and C# with Visual Studio</p>
-        </div>
-        <div class="sample">
-          <h3>Final Year Project: A Campus Running/Walking App with GPS/IoT Tracking</h3>
-          <p>The Project was completed utilizing React Native and JavaScript</p>
-          <p>I was responsible for the implementation of indoor map features, i.e Marked and updated user's current location, map controls (floor changing, zooming) and user profile features i.e. user info changes, record display</p>
-          <p>Grading: A+</p>
-        </div>
-        <div class="sample">
-          <h3>Peg Solitaire</h3>
-          <p>The project was completed utilizing React Native and JavaScript</p>
-          <p>I was responsible in UI/UX design and implementation and theme changing feature implementation</p>
-          <div class="flex-col-center">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/hzwRdCqPkkM?si=dRJxGFjibi5j4MXs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          </div>
-          <p>Grading: A</p>
-        </div>
-        <div class="sample">
-          <h3>Matching Game</h3>
-          <p>The project was completed using Scratch</p>
-          <p>Grading: A+</p>
-        </div>
-      </div>
-    </section>
-    <section id="sec-edu" class="section edu">
-      <h2>Education</h2>
-      <div class="level">
-        <h3>Bachelor's degree in Computer Engineering<i class="fa-solid fa-computer spacing-1"></i></h3>
-        <h4>Hong Kong University of Science and Technology</h4>
-        <p class="desc">
-          Graduated in 2022 (QS ranking - 34)<br/>
-          Minor: Humanities <br/>
-        </p>
-        <p class="desc">
-          <span>Projects:</span> <br/>
-          Final Year Project: A Campus Running/Walking App with GPS/IoT Rracking (React Native, JavaScript) Grade: A+<br/>
-          Peg Solitaire (React Native, JavaScript) Grade: A<br/>
-          A Matching Game (Scratch) Grade: A+<br/>
-        </p>
-        <p class="desc">
-          <span>Activities: </span><br/>
-          Event Coordinator - University YMCA<br/>
-          Student Helper - Non-local student adminission interview<br/>
-          Volunteer - NASA international Space Apps Challenge 2019<br/>
-          Referee Helper - Robocon 2021
-        </p> 
-      </div>
-      <div class="level">
-        <h3>Hong Kong Diploma of Secondary Education <i class="fa-solid fa-school spacing-1"></i></h3>
-        <h4>The E.L.C.H.K. Yuen Long Lutheran Secondary School</h4>
-        <p class="desc">
-          Graduated in 2018<br/>
-          <span>Subjects attained level 5 or above in public exam(HKDSE)</span><br/>
+    </div> 
+  </section>
+  <section id="sec-pro" class="section exp">
+    <div class="container">
+    <h2>Professional Experience</h2>
+    <div class="timeline">
+      <div class="checkpoint">
+        <div>
+        <h3>Software Developer, Technical Product Manager</h3>
+        <h4>Folotech INC, North York, ON</h4>
+        <p>
           <ul>
-            <li>Mathematics compulsory part & module 2</li>
-            <li>Physics</li>
-            <li>Chemistry</li>
-            <li>Chinese</li>
+            <li>Developed and maintained a responsive website using Vue and Ant Design Vue</li>
+            <li>Utilized React and React Native framework with TypeScript/JavaScript and Material UI library to develop robust and efficient web and mobile applications.</li>
+            <li>Performed integration testing to ensure that the application functions as expected</li>
+            <li>Debugged, tested and troubleshoot software issues</li>
+            <li>Participated in UX/UI design and relational database scheme design</li>
+            <li>Skilled in implementing version control practices to manage code changes effectively and facilitate collaboration among development teams.</li>
+            <li>Defined product requirements and specifications based on non-functional requirements and business objectives.</li>
+            <li>Collaborated with cross-functional teams to prioritize and develop product features aligned with technical requirements and business goals</li>
+            <li>Conducted market and competitive analysis to identify future opportunities for growth for the products</li>
+          </ul>	
+          </p>
+        </div>
+      </div>
+      <div class="checkpoint">
+        <div>
+        <h3>Programmer</h3>
+        <h4>HKT, Hong Kong</h4>
+        <p>
+          <ul>
+            <li>Utilized ASP.NET web form with C# to develop CRM web applications.</li>
+            <li>Updated and maintained relational database system using MS SQL server to ensure the accuracy and efficiency in data management</li>
+            <li>Discussed with the sales team to collect opinions on improving the existing systems and made enhancements.</li>
+            <li>Worked closely with the test team to do UAT testing</li>
+            <li>Configured and deployed web applications on IIS web servers</li>
           </ul>
         </p>
-        <p class="desc">
-          <span>Activities:</span><br/>
-          Volunteer - Interact Club, Evangelical Lutheran Chruch Social Service HK (Teens department)<br/>
-          Committee Memeber - House Committee, Life-planning Society, Mandarin Society, Geography Society<br/>
-          Team Member - School Choir<br/>
-          Student Helper - P6 parents' information day ambassadar, exchange student ambassadar, friend school teachers visiting ambassadar<br/>
-          Exchange - Korean Culture and Technology Exchange Tour
-        </p>
+        </div>
       </div>
-    </section>
-    <!-- <section id="sec-volunteer" class="section vltr">
-      <p>This is Volunteering sec</p>
-      <p>
-        discussion:<br/>
-        1. What's the difference of text-overflow, overflow, word-wrap?<br/>
-        2. Pros and Cons between pre and p tag. (pre tag cannot wrap word, they will overflow)<br/>
-        3. When to use br or start a new p<br/>
-        4. difference between React, Vue and HTML web.<br/>
+      <div class="checkpoint">
+        <div>
+        <h3>Summer Intern</h3>
+        <h4>Hong Kong Central Library</h4>
+        <p>
+          <ul>
+            <li>Digitized Carl Smith's Index Card and updated details by entering and revising data using Excel</li>
+            <li>Ensured accuracy, sequencing, and completeness by verifying images against original index cards.</li>
+            <li>Developed a VBA calendar program to generate weekly summary reports and streamline administrative processes.</li>
+            <li>Provided user manual and technical assistance to guide users in utilizing the program effectively</li>
+            <li>Applied strong computer literacy skills to enhance daily office operations</li>
+          </ul>
+        </p>
+        </div>
+      </div>
+      <div class="checkpoint">
+        <div>
+        <h3>Student Helper</h3>
+        <h4>Hong Kong University of Science and Technology</h4>
+        <p>
+          <ul>
+            <li>Assisted teaching assistants in guiding and monitoring students during lab sessions.</li>
+            <li>Helped students to achieve the desired results and provided troubleshooting assistance when needed.</li>
+            <li>Facilitated the distribution of lab materials and equipment, ensuring students had access to necessary resources.</li>
+          </ul>
+        </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="sec-demo" class="section demo">
+    <div class="container">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="sample">
+        <h3>English Mobile Learning App</h3>
+        <p>The app is developed using React Native and TypeScript.</p>
+        <p>This app serves as a comprehensive platform for educational institutions, facilitating the streamlined distribution of homework assignments and the monitoring of students' academic progress. Teachers can leverage the app to send reminders, assess exercises, and design a variety of tasks to evaluate students' performance.</p>
+          
+        <p>Specifically, my responsibilities encompass implementing features designed for audio playback, including integrating animated effects such as a dynamic timeline and synchronized scrolling of audio content (lyrics). Additionally, I have successfully developed a task distribution feature empowering teachers to generate, assign, and disseminate tasks efficiently to students</p>
+      </div>
+      <div class="sample">
+        <h3>ESL Online Learning Platform</h3>
+        <p>The project is a web app that aims to provide online learning for ESL students who need flexible learning time and want to improve their English after school.</p>
+        <p>The app was completed using React, JavaScript, and Material UI.</p>  
+          
+        <p>My focus included the development of distinct platforms. Firstly, a student-centric web application had been crafted, empowering students to seamlessly register for courses, access educational materials, and engage in interactive sessions with teachers and teaching assistants.
+          Additionally, a dedicated web application tailored for teaching assistants has been designed. This platform facilitates posting comments, evaluating student performance, and the dynamic management of learning materials through features allowing publication and updates.</p>
+      </div>
+      <div class="sample">
+        <h3>Company Website Maintaince & Content Update Tools</h3>
+        <p>This project was utilized Vue and Ant Design</p>
+      </div>
+      <div class="sample">
+        <h3>CRM application renewal project</h3>
+        <p>This project was utilized ASP.NET and C# with Visual Studio</p>
+      </div>
+      <div class="sample">
+        <h3>Final Year Project: A Campus Running/Walking App with GPS/IoT Tracking</h3>
+        <p>The Project was completed utilizing React Native and JavaScript</p>
+        <p>I was responsible for the implementation of indoor map features, i.e Marked and updated user's current location, map controls (floor changing, zooming) and user profile features i.e. user info changes, record display</p>
+        <p>Grading: A+</p>
+      </div>
+      <div class="sample">
+        <h3>Peg Solitaire</h3>
+        <p>The project was completed utilizing React Native and JavaScript</p>
+        <p>I was responsible in UI/UX design and implementation and theme changing feature implementation</p>
+        <div class="flex-col-center">
+          <iframe width="100%" height="auto" src="https://www.youtube.com/embed/hzwRdCqPkkM?si=dRJxGFjibi5j4MXs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <p>Grading: A</p>
+      </div>
+      <div class="sample">
+        <h3>Matching Game</h3>
+        <p>The project was completed using Scratch</p>
+        <p>Grading: A+</p>
+      </div>
+    </div>
+    </div>
+  </section>
+  <section id="sec-edu" class="section edu">
+    <div class="container">
+    <h2>Education</h2>
+    <div class="level">
+      <h3>Bachelor's degree in Computer Engineering<i class="fa-solid fa-computer spacing-1"></i></h3>
+      <h4>Hong Kong University of Science and Technology</h4>
+      <p class="desc">
+        Graduated in 2022 (QS ranking - 34)<br/>
+        Minor: Humanities <br/>
       </p>
-    </section> -->
-    <!-- <section id="sec-contact" class="section contact">
-      <p>This is contact sec</p>
-    </section> -->
+      <p class="desc">
+        <span>Projects:</span> <br/>
+        <ul>
+          <li>Final Year Project: A Campus Running/Walking App with GPS/IoT Tracking</li>
+          <li>Peg Solitaire</li>
+          <li>A Matching Game</li>
+        </ul>
+        <br/>
+      </p>
+      <p class="desc">
+        <span>Activities: </span><br/>
+        <ul>
+          <li>Event Coordinator - University YMCA</li>
+          <li>Student Helper - Non-local student adminission interview</li>
+          <li>Volunteer - NASA international Space Apps Challenge 2019</li>
+          <li>Referee Helper - Robocon 2021</li>
+        </ul>
+      </p> 
+    </div>
+    <div class="level">
+      <h3>Hong Kong Diploma of Secondary Education <i class="fa-solid fa-school spacing-1"></i></h3>
+      <h4>The E.L.C.H.K. Yuen Long Lutheran Secondary School</h4>
+      <p class="desc">
+        Graduated in 2018<br/>
+        <span>Subjects attained level 5 or above in public exam(HKDSE)</span><br/>
+        <ul>
+          <li>Mathematics compulsory part & module 2</li>
+          <li>Physics</li>
+          <li>Chemistry</li>
+          <li>Chinese</li>
+        </ul>
+      </p>
+      <p class="desc">
+        <span>Activities:</span><br/>
+        <ul>
+          <li>Volunteer - Interact Club, Evangelical Lutheran Chruch Social Service HK (Teens department)</li>
+          <li>Committee Memeber - House Committee, Life-planning Society, Mandarin Society, Geography Society</li>
+          <li>Team Member - School Choir</li>
+          <li>Student Helper - P6 parents' information day ambassadar, exchange student ambassadar, friend school teachers visiting ambassadar</li>
+          <li>Exchange - Korean Culture and Technology Exchange Tour</li>
+        </ul>
+      </p>
+    </div>
   </div>
+  </section>
+  <!-- <section id="sec-volunteer" class="section vltr">
+    <p>This is Volunteering sec</p>
+    <p>
+      discussion:<br/>
+      1. What's the difference of text-overflow, overflow, word-wrap?<br/>
+      2. Pros and Cons between pre and p tag. (pre tag cannot wrap word, they will overflow)<br/>
+      3. When to use br or start a new p<br/>
+      4. difference between React, Vue and HTML web.<br/>
+    </p>
+  </section> -->
 </div>
 </body>
 </html>
