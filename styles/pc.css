@@ -24,6 +24,14 @@
     flex-direction: column;
   }
 
+  .social-link {
+    margin-bottom: 15vh;
+  }
+
+  iframe {
+    height: 40vh;
+  }
+
   .card-container {
     grid-template-columns: repeat(auto-fill, 20vw);
   }
