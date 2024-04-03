@@ -14,6 +14,12 @@
     justify-content: center;
     transform: translateY(-50%);
   }
+
+  .nav-item:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    opacity: 0.75;
+  }
   
   .container {
     position: absolute;
@@ -26,6 +32,16 @@
 
   .social-link {
     margin-bottom: 15vh;
+  }
+
+  .social-link i {
+    font-size: 2.5rem;
+    padding: 1rem;
+    border-radius: 1.25rem;
+  }
+
+  .social-link a:hover i {
+    font-size: 2.75rem;
   }
 
   iframe {

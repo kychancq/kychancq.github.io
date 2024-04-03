@@ -24,6 +24,12 @@
     text-align: center;
   }
 
+  .social-link i {
+    font-size: 2rem;
+    padding: 0.75rem;
+    border-radius: 1rem;
+  }
+
   .card-container {
     grid-template-columns: repeat(auto-fill, 45vw);
   }

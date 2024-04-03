@@ -84,25 +84,19 @@ img {
 }
 
 .nav-item {
-  margin: 0.5rem 0;
+  margin: 0.5vh 0;
   box-shadow: none;
   border: 0;
   border-radius: 1.25rem;
   background-color: transparent;
-  min-height: 2.5rem;
-  min-width: 2.5rem;
+  min-height: 2vw;
+  min-width: 2vw;
   text-align: center;
 }
 
 .nav-item i {
-  font-size: 1.5rem;
+  font-size: 1.5em;
   padding: 1rem;
-}
-
-.nav-item:hover {
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
-  opacity: 0.75;
 }
 
 .active-btn {
@@ -141,17 +135,13 @@ img {
 }
 
 .social-link i {
-  font-size: 2.5rem;
   background-color: var(--secondary-color);
-  padding: 1rem;
-  border-radius: 1.25rem;
   color: var(--primary-color);
   margin: 0 0.5rem;
 }
 
 .social-link a:hover i {
   transition: all 0.1s ease-in-out;
-  font-size: 2.75rem;
 }
 
 .tooltip {
@@ -162,6 +152,7 @@ img {
 .tooltip .tooltiptext {
   position: absolute;
   top: -10vh;
+  right: 0;
   display: none;
   padding: 1rem;
   background-color: #fff;

@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
           section.style.display = 'none'
       })
 
+      window.scrollTo(0,0);
     })
   })
 
