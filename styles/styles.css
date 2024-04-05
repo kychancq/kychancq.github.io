@@ -36,6 +36,7 @@ h2 {
   font-size: 3rem;
   margin: 1.5rem 0;
   text-align: center;
+  text-shadow: 10px 5px var(--secondary-color);
 }
 
 h4 {
@@ -244,8 +245,54 @@ img {
   padding: 0.5rem 0;
 }
 
+.sample a {
+  color: var(--primary-color);
+  padding: 0.5vh 0.5vw;
+  background-color: #fff;
+  border-radius: 0.75vh;
+  border: 2px solid var(--primary-color);
+  box-shadow: 5px 5px var(--bg-color);
+}
+
+.sample a i {
+  color: var(--primary-color);
+  margin-left: 5px;
+}
+
 .vltr {
   display: none;
 }
 
+.img_fr {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.img_fr:hover .image {
+  opacity: 0.3;
+}
+
+.img_fr:hover .middle {
+  opacity: 1;
+}
 
