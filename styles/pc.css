@@ -30,10 +30,6 @@
     flex-direction: column;
   }
 
-  .social-link {
-    margin-bottom: 15vh;
-  }
-
   .social-link i {
     font-size: 2.5rem;
     padding: 1rem;
@@ -50,10 +46,11 @@
 
   .card-container {
     grid-template-columns: repeat(auto-fill, 20vw);
+    margin-bottom: 10vh;
   }
 
   .timeline {
-    max-width: 80vw;
+    width: 100%;
   }
 
   .sample {
@@ -77,5 +74,21 @@
     transform: translateX(-17.4vw);
   }
   
+  .checkpoint:nth-child(odd)::before,
+  .checkpoint:nth-child(even)::before {
+    content: '';
+    width: 2rem;
+    height: 3px;
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 50%;
+  }
 
+  .checkpoint:nth-child(odd)::before {
+    left: 0;
+  }
+
+  .checkpoint:nth-child(even)::before {
+    right: 0;
+  }
 }

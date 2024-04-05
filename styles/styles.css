@@ -130,9 +130,10 @@ img {
 }
 
 .social-link {
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: center;
+  margin: 10vh 0;
 }
 
 .social-link i {
@@ -189,13 +190,14 @@ img {
 
 .timeline {
   overflow: hidden;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .checkpoint {
   position: relative;
-  padding: 1rem;
-  margin: 0 auto;
+  padding: 1rem 0;
 }
 
 .checkpoint div {
@@ -296,3 +298,29 @@ img {
   opacity: 1;
 }
 
+@keyframes slide_from_left {
+  from {transform:  translateX(-50vw);}
+  to {transform: translateX(0);}
+}
+
+@keyframes slide_from_right {
+  from {transform: translateX(50vw);}
+  to {transform: translateX(0);}
+}
+
+@keyframes slide_from_bottom {
+  from {transform: translateY(50vh);}
+  to {transform: translateY(0);}
+}
+
+.from_left {
+  animation: slide_from_left 0.75s ease-in-out;
+}
+
+.from_right {
+  animation: slide_from_right 0.75s ease-in-out;
+}
+
+.from_bottom {
+  animation: slide_from_bottom 0.75s ease-in-out;
+}
