@@ -15,19 +15,10 @@
     transform: translateY(-50%);
   }
 
-  .nav-item:hover {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-    opacity: 0.75;
-  }
-  
   .container {
-    position: absolute;
-    left: 10vw;
-    top: 0;
+    margin-left: 10vw;
     width: 90vw;
     min-height: 100vh;
-    flex-direction: column;
   }
 
   .social-link i {
@@ -45,7 +36,7 @@
   }
 
   .card-container {
-    grid-template-columns: repeat(auto-fill, 20vw);
+    grid-template-columns: repeat(3, 20vw);
     margin-bottom: 10vh;
   }
 
@@ -54,7 +45,7 @@
   }
 
   .sample {
-    width: 60vw;
+    width: 600px;
     padding: 3vh 2vw;
   }
 
