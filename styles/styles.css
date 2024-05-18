@@ -91,6 +91,13 @@ img {
   place-items: center;
 }
 
+.icon {
+  width: 200px; 
+  height: 200px; 
+  border-radius: 100px; 
+  margin: 0 50px;
+}
+
 .nav-item {
   margin: 0.5vh 0;
   box-shadow: none;
@@ -129,10 +136,6 @@ img {
   width: 100vw;
   word-wrap: break-word;
   min-height: 100vh;
-}
-
-.intro {
-  display: flex;
 }
 
 .social-link {
@@ -191,7 +194,6 @@ img {
 }
 
 .timeline {
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -49,6 +49,10 @@
     padding: 3vh 2vw;
   }
 
+  .self-intro {
+    display: flex;
+  }
+
   .checkpoint {
     max-width: 35vw;
   }
